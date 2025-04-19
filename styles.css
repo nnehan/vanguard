@@ -1,6 +1,7 @@
-/* CSS BY YOUR NAME */
+/* CSS BY your name */
 
 /* IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* IMPORT "INTER" FROM GOOGLE FONTS"
 
 /* CSS RESET */
@@ -63,8 +64,382 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+html {
+    max-width: 600px;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: #000000;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    color: #007BFF;
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav h2 {
+    visibility: hidden;
+}
+
+nav h2, li a, #menu-toggle {
+    position: relative;
+    left: 400px;
+}
+
+nav ul {
+    width: 100%;
+    margin:0;
+    padding:0;
+    list-style:none;
+    overflow: hidden;
+    text-align:center;
+    max-height: 0;
+  }
+
+nav li a {
+    display:block;
+    font-size:1.5rem;
+    padding: 1rem;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-decoration:none;
+    color: white;
+    transition: background-color .3s ease-in;
+  }
+
+  nav a:hover, nav input:hover {
+    background-color: #007BFF;
+    width: 100%;
+}
+
+label span {
+    background-color: white;
+    display: block;
+    height: .25rem;
+    position: relative;
+    transition: background-color .3s ease-out;
+    width: 2rem;
+    left: 500px;
+}
+
+label span:before, label span:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.iandi{
+    color: #EAEAEA;
+
+}
+
+.iandi h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    position: relative;
+    top: 200px;
+}
+
+.iandi p{
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.iandi button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    position: relative;
+    bottom: 160px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.oeye h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.oeye p{
+    font-size: 1.22rem;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 25px;
+}
+
+.wwo h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.box1{
+    position: relative;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding-left: 15px;
+    margin-left: 30px;
+    width: 520px;
+    border-radius: 15px;
+}
+
+.box1 h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.box1 p{
+    font-size: 1.22rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.box2{
+    position: relative;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding-left: 15px;
+    margin-left: 30px;
+    width: 520px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.box2 h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.box2 p{
+    font-size: 1.24rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.box3{
+    position: relative;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding-left: 15px;
+    margin-left: 30px;
+    width: 520px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.box3 h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.box3 p{
+    font-size: 1.24rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.box4{
+    position: relative;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding-left: 15px;
+    margin-left: 30px;
+    width: 520px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.box4 h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.box4 p{
+    font-size: 1.24rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.box5{
+    position: relative;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding-left: 15px;
+    margin-left: 30px;
+    width: 520px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.box5 h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.box5 p{
+    font-size: 1.27rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.box6{
+    position: relative;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding-left: 15px;
+    margin-left: 30px;
+    width: 520px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.box6 h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.box6 p{
+    font-size: 1.24rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 75px;
+}
+
+.pr{
+    background-color: #007BFF;
+    padding-bottom: 25px;
+}
+
+.pr h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+    color: #EAEAEA;
+}
+
+.pr p{
+    font-size: 1.22rem;
+    padding-left: 35px;
+    line-height: 25px;
+    color: #EAEAEA;
+    letter-spacing: .7px;
+}
+
+.pr h3{
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+    color: #EAEAEA;
+}
+
+table, th, tr, td{
+    position: relative;
+    margin-left: 30px;
+    width: 535px;
+    text-align: center;
+    border: 1px solid #333333;
+    padding: 20px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+.cu{
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+.cu h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+}
+
+.cu p{
+    font-size: 1.22rem;
+    padding-left: 35px;
+    padding-right: 25px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    padding-bottom: 25px;
+}
+
+form{
+    position: relative;
+    width: 535px;
+    left: 35px;
+    
+}
+
+.cu label{
+    font-size: 1.22rem;
+    
+}
+
+.cu input{
+    width: 517px;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: 3px solid #007BFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+html {
+    min-width: 400px;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -74,7 +449,7 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+.iandi {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -85,12 +460,12 @@ table {
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
+nav {
     content: "";
-
+    
     left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 90px;
+    height: 90px;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
 }
@@ -113,7 +488,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 0.5s ease;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -142,7 +517,8 @@ table {
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
-
+@media screen and (min-width: 800px) {
+     
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -156,6 +532,9 @@ table {
     .bar-chart {
         width: 50%;
     }
-
+}
 
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {
+    
+}
