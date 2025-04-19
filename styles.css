@@ -140,6 +140,18 @@ label span:before, label span:after {
     width: 100%;
 }
 
+label span::before{
+    top: .75rem;
+}
+
+label span::after{
+    top: -.75rem;
+}
+
+#menu-toggle{
+    display: none;
+}
+
 .iandi{
     color: #EAEAEA;
 
@@ -169,6 +181,13 @@ label span:before, label span:after {
     bottom: 160px;
     padding: 20px;
     border-radius: 15px;
+}
+
+.iandi button:hover{
+    transition: background-color 1s;
+    background-color: #FF4500;
+    width: 330px;
+    height: 90px;
 }
 
 .oeye h2{
@@ -374,6 +393,8 @@ table, th, tr, td{
     color: #EAEAEA;
 }
 
+
+
 .cu{
     background-color: #000000;
     color: #EAEAEA;
@@ -410,17 +431,46 @@ form{
 
 .cu input{
     width: 517px;
-    height: 40px;
+    height: 50px;
     margin-top: 4px;
     margin-bottom: 20px;
     border: 3px solid #007BFF;
 }
 
+#message{
+    width: 517px;
+    height: 120px;
+    margin-top: 4px;
+    border: 3px solid #007BFF;
+}
 
+.cu button{
+    width: 529px;
+    height: 65px;
+    font-size: 1.35rem;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #EAEAEA;
+    background-color: #007BFF;
+    margin-top: 50px;
+    margin-bottom: 55px;
+}
 
+.cu button:hover{
+    transition: background-color 1s;
+    background-color: #FF4500;
+    width: 539px;
+    height: 75px;
+}
 
-
-
+footer{
+    color: #EAEAEA;
+    background-color: #000000;
+    padding-bottom: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.25rem;
+}
 
 
 
@@ -517,24 +567,181 @@ nav {
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
-@media screen and (min-width: 800px) {
-     
-    #results {
-        grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 800px) and (max-width: 1023px){
+    html{
+        max-width: 100%;
+        font-size: 1rem;
     }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
+
+    h1{
+        font-size: 3rem;
+        top: 40px;
+        left: 150px;
     }
-    .results-table {
-        width: 50%;
+
+    nav h2, li a, #menu-toggle{
+        left: 0;
     }
-    .bar-chart {
-        width: 50%;
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        max-height: none;
+    }
+
+    nav li a{
+        padding: 0.75rem 1.5rem;
+    }
+
+    label span{
+        left: 0;
+    }
+
+    .iandi h2,
+    .oeye h2,
+    .wwo h2,
+    .pr h2,
+    .pr h3,
+    .cu h2{
+        font-size: 2.5rem;
+    }
+
+    .iandi p,
+    .oeye p,
+    .pr p,
+    .cu p{
+        font-size: 1.25rem;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    form,
+    table{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cu input, #message, .cu button{
+        width: 100%;
+    }
+
+    .iandi button{
+        width: auto;
+        height: auto;
+    }
+
+    .iandi button:hover{
+        width: auto;
+        height: auto;
+    }
+    
+    .cu button:hover{
+        width: 100%;
+        height: 75%;
+    }
+
+    footer{
+        font-size: 1.1rem;
     }
 }
 
 /* MEDIA QUERIES (LARGE) */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
     
+    html{
+        max-width: none;
+        font-size: 18px;
+    }
+
+    header{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    h1{
+        left: 150px;
+        font-size: 3.5rem;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        max-height: none;
+    }
+
+    nav li a{
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+    }
+
+    label span, #menu-toggle{
+        display: none;
+    }
+
+    .iandi h2,
+    .oeye h2,
+    .wwo h2,
+    .pr h2,
+    .cu h2{
+        font-size: 3rem;
+        padding-left: 80px;
+    }
+
+    .iandi p,
+    .oeye p,
+    .wwo p,
+    .pr p,
+    .cu p{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .iandi button{
+        left: 80px;
+        font-size: 1.75rem;
+        width: 360px;
+        height: 100px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table{
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form{
+        width: 900px;
+        left: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cu input, #message, .cu button{
+        width: 100%;
+    }
+
+    .cu button:hover{
+        width: 100%;
+    }
+
+    footer{
+        font-size: 1.5rem;
+    }
+
 }
