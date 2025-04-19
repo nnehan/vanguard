@@ -472,20 +472,6 @@ footer{
     font-size: 1.25rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 html {
     min-width: 400px;
@@ -688,7 +674,7 @@ nav {
     .wwo h2,
     .pr h2,
     .cu h2{
-        font-size: 3rem;
+        font-size: 3.1rem;
         padding-left: 80px;
     }
 
@@ -703,7 +689,7 @@ nav {
 
     .iandi button{
         left: 80px;
-        font-size: 1.75rem;
+        font-size: 1.70rem;
         width: 360px;
         height: 100px;
     }
@@ -741,7 +727,7 @@ nav {
     }
 
     footer{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
 }
